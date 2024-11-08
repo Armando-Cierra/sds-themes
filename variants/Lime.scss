@@ -1,0 +1,36 @@
+@import '../../core/tools';
+
+body[data-sds-colormode='Light'][data-sds-theme='Lime'], body[data-sds-colormode='Dark'][data-sds-theme='Lime']{
+  --sds_theme_focus_shadow_color: rgba(147, 219, 36, 0.64);
+}
+
+// ==============================
+// Light mode
+// ==============================
+
+body[data-sds-colormode='Light'][data-sds-theme='Lime'] {
+  --sds_theme_color_primary: #{sds-color(lime, 60)};
+  --sds_theme_color_primary_interactive: #{sds-color(lime, 70)};
+  --sds_theme_color_primary_background: #{sds-color(lime, 05)};
+  --sds_theme_color_primary_background_2: #{sds-color(lime, 20)};
+  --sds_theme_color_primary_text: #{sds-color(lime, 80)};
+
+  --sds_theme_button_primary_text: var(--sds_theme_text);
+  --sds_theme_button_primary_icon: var(--sds_theme_icon_interactive);
+
+  --sds_theme_button_secondary_icon: var(--sds_theme_color_primary_interactive);
+
+  --sds_link_icon: var(--sds_theme_color_primary_interactive);
+}
+
+// ==============================
+// Dark mode
+// ==============================
+
+body[data-sds-colormode='Dark'][data-sds-theme='Lime'] {
+  --sds_theme_color_primary: #{sds-color(lime, 40)};
+  --sds_theme_color_primary_interactive: #{sds-color(lime, 30)};
+  --sds_theme_color_primary_background: #{sds-color(lime, 100)};
+  --sds_theme_color_primary_background_2: #{sds-color(lime, 80)};
+  --sds_theme_color_primary_text: var(--sds_theme_color_primary_interactive);
+}

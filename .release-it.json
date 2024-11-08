@@ -1,0 +1,57 @@
+{
+  "git": {
+    "commitMessage": "chore: :rocket: Release v${version}"
+  },
+  "github": {
+    "release": true
+  },
+  "npm": {
+    "publish": false
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "infile": "CHANGELOG.md",
+      "preset": {
+        "name": "conventionalcommits",
+        "types": [
+          {
+            "type": "feat",
+            "section": "Features"
+          },
+          {
+            "type": "fix",
+            "section": "Bug Fixes"
+          },
+          {
+            "type": "chore",
+            "hidden": true
+          },
+          {
+            "type": "docs",
+            "section": "Documents"
+          },
+          {
+            "type": "style",
+            "section": "Styles"
+          },
+          {
+            "type": "refactor",
+            "section": "Refactor"
+          },
+          {
+            "type": "perf",
+            "section": "Performance"
+          },
+          {
+            "type": "test",
+            "section": "Testing"
+          },
+          {
+            "type": "ci",
+            "section": "Continuous Integration"
+          }
+        ]
+      }
+    }
+  }
+}

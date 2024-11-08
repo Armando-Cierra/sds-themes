@@ -1,0 +1,19 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# OSX
+#
+.DS_Store
+
+# VSCode
+.vscode/
+jsconfig.json
+
+# dependencies
+/node_modules
+/storybook-static
+/.pnp
+.pnp.js
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

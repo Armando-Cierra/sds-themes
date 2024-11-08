@@ -1,0 +1,29 @@
+@import '../../core/tools';
+
+body[data-sds-colormode='Light'][data-sds-theme='Teal'], body[data-sds-colormode='Dark'][data-sds-theme='Teal']{
+  --sds_theme_focus_shadow_color: rgba(54, 182, 180, 0.64);
+}
+
+// ==============================
+// Light mode
+// ==============================
+
+body[data-sds-colormode='Light'][data-sds-theme='Teal'] {
+  --sds_theme_color_primary: #{sds-color(teal, 60)};
+  --sds_theme_color_primary_interactive: #{sds-color(teal, 70)};
+  --sds_theme_color_primary_background: #{sds-color(teal, 05)};
+  --sds_theme_color_primary_background_2: #{sds-color(teal, 20)};
+  --sds_theme_color_primary_text: var(--sds_theme_color_primary_interactive);
+}
+
+// ==============================
+// Dark mode
+// ==============================
+
+body[data-sds-colormode='Dark'][data-sds-theme='Teal'] {
+  --sds_theme_color_primary: #{sds-color(teal, 40)};
+  --sds_theme_color_primary_interactive: #{sds-color(teal, 30)};
+  --sds_theme_color_primary_background: #{sds-color(teal, 100)};
+  --sds_theme_color_primary_background_2: #{sds-color(teal, 80)};
+  --sds_theme_color_primary_text: var(--sds_theme_color_primary_interactive);
+}

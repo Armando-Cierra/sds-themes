@@ -1,0 +1,22 @@
+{
+  "name": "sds-themes",
+  "version": "3.5.4",
+  "description": "Official themes collection for Sipster Design System",
+  "main": "themes.scss",
+  "scripts": {
+    "prepare": "husky install",
+    "release": "release-it --npm.skipChecks"
+  },
+  "author": "Josh Sanders & Armando Cierra",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@release-it/conventional-changelog": "^5.1.1",
+    "release-it": "^15.6.0",
+    "husky": "^8.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

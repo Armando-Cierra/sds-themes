@@ -1,0 +1,29 @@
+@import '../../core/tools';
+
+body[data-sds-colormode='Light'][data-sds-theme='Blue'], body[data-sds-colormode='Dark'][data-sds-theme='Blue']{
+  --sds_theme_focus_shadow_color: rgba(50, 119, 245, 0.64);
+}
+
+// ==============================
+// Light mode
+// ==============================
+
+body[data-sds-colormode='Light'][data-sds-theme='Blue'] {
+  --sds_theme_color_primary: #{sds-color(blue, 60)};
+  --sds_theme_color_primary_interactive: #{sds-color(blue, 70)};
+  --sds_theme_color_primary_background: #{sds-color(blue, 05)};
+  --sds_theme_color_primary_background_2: #{sds-color(blue, 20)};
+  --sds_theme_color_primary_text: var(--sds_theme_color_primary_interactive);
+}
+
+// ==============================
+// Dark mode
+// ==============================
+
+body[data-sds-colormode='Dark'][data-sds-theme='Blue'] {
+  --sds_theme_color_primary: #{sds-color(blue, 40)};
+  --sds_theme_color_primary_interactive: #{sds-color(blue, 30)};
+  --sds_theme_color_primary_background: #{sds-color(blue, 100)};
+  --sds_theme_color_primary_background_2: #{sds-color(blue, 80)};
+  --sds_theme_color_primary_text: var(--sds_theme_color_primary_interactive);
+}

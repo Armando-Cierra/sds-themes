@@ -1,0 +1,44 @@
+@import '../../core/tools';
+
+body[data-sds-colormode='Light'][data-sds-theme='Yellow'], body[data-sds-colormode='Dark'][data-sds-theme='Yellow']{
+  --sds_theme_focus_shadow_color: rgba(248, 165, 6, 0.64);
+}
+
+// ==============================
+// Light mode
+// ==============================
+
+body[data-sds-colormode='Light'][data-sds-theme='Yellow'] {
+  --sds_theme_color_primary: #{sds-color(yellow, 60)};
+  --sds_theme_color_primary_interactive: #{sds-color(yellow, 70)};
+  --sds_theme_color_primary_background: #{sds-color(yellow, 05)};
+  --sds_theme_color_primary_background_2: #{sds-color(yellow, 20)};
+  --sds_theme_color_primary_text: var(--sds_theme_color_primary_interactive);
+
+  --sds_theme_button_primary_text: var(--sds_theme_text);
+  --sds_theme_button_primary_icon: var(--sds_theme_icon_interactive);
+
+  --sds_theme_color_warning: #{sds-color(orange, 60)};
+  --sds_theme_color_warning_interactive: #{sds-color(orange, 70)};
+  --sds_theme_color_warning_background: #{sds-color(orange, 05)};
+  --sds_theme_color_warning_background_2: #{sds-color(orange, 20)};
+  --sds_theme_color_warning_text: var(--sds_theme_color_warning_interactive);
+}
+
+// ==============================
+// Dark mode
+// ==============================
+
+body[data-sds-colormode='Dark'][data-sds-theme='Yellow'] {
+  --sds_theme_color_primary: #{sds-color(yellow, 40)};
+  --sds_theme_color_primary_interactive: #{sds-color(yellow, 30)};
+  --sds_theme_color_primary_background: #{sds-color(yellow, 100)};
+  --sds_theme_color_primary_background_2: #{sds-color(yellow, 80)};
+  --sds_theme_color_primary_text: var(--sds_theme_color_primary_interactive);
+
+  --sds_theme_color_warning: #{sds-color(orange, 40)};
+  --sds_theme_color_warning_interactive: #{sds-color(orange, 30)};
+  --sds_theme_color_warning_background: #{sds-color(orange, 100)};
+  --sds_theme_color_warning_background_2: #{sds-color(orange, 80)};
+  --sds_theme_color_warning_text: var(--sds_theme_color_warning_interactive);
+}
